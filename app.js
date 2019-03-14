@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 
-app.get("/", (res,req) => res.send("HELLO WORLD"));
+app.get("/", (req,res) => res.send("HELLO WORLD"));
 
 const port = process.env.PORT || 5000;
 
