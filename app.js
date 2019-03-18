@@ -1,11 +1,14 @@
 const express = require("express");
 const mongoose = require('mongoose');
+const users = require("./routes/api/users");
+const events = require("./routes/api/events");
+const bodyParser = require('body-parser');
 
 const app = express();
 const db = require('./config/keys').mongoURI;
 
-const users = require("./routes/api/users");
-const events = require("./routes/api/events");
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 
 mongoose
     .connect(db)
