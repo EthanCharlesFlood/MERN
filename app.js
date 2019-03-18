@@ -4,6 +4,9 @@ const mongoose = require('mongoose');
 const app = express();
 const db = require('./config/keys').mongoURI;
 
+const users = require("./routes/api/users");
+const events = require("./routes/api/events");
+
 mongoose
     .connect(db)
     .then(() => console.log("Connected to MongoDB successfully"))
