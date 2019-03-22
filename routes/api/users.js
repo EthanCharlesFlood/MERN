@@ -73,7 +73,6 @@ router.post('/login', (req, res) => {
                         jsonwebtoken.sign(
                             payload,
                             keys.secretOrKey,
-                            // Tell the key to expire in one hour
                             { expiresIn: 3600 },
                             (err, token) => {
                                 res.json({
