@@ -6,6 +6,7 @@ const keys = require('../../config/keys');
 const passport = require('passport');
 const router = express.Router();
 
+// Registration route
 
 router.post("/register", (req, res) => {
     const { errors, isValid } = validateRegisterInput(req.body);
@@ -47,6 +48,8 @@ router.post("/register", (req, res) => {
         }
     });
 });
+
+//Login Route
 
 router.post('/login', (req, res) => {
     const { errors, isValid } = validateLoginInput(req.body);
@@ -94,3 +97,4 @@ router.get('/current', passport.authenticate('jsonwebtoken', { session: false })
         email: req.user.email
     });
 })
+
