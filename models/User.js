@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
+//nsql schema represents json like object
 
 const UserSchema = new Schema({
     name: {
