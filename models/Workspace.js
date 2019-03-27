@@ -14,4 +14,4 @@ const WorkspaceSchema = new Schema({
     }
 })
 
-module.exports = User = mongoose.model('users', WorkspaceSchema);
+module.exports = User = mongoose.model('workspaces', WorkspaceSchema);

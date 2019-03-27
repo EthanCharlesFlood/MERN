@@ -14,4 +14,4 @@ const ChannelSchema = new Schema({
     }
 })
 
-module.exports = User = mongoose.model('users', ChannelSchema);
+module.exports = User = mongoose.model('channels', ChannelSchema);
