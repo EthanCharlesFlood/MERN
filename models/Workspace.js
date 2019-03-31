@@ -9,7 +9,8 @@ const WorkspaceSchema = new Schema({
         required: true,
     },
     user: {
-        
+        type: Number,
+        ref: 'User'
     }
     date: {
         type: Date,
