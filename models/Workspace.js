@@ -8,6 +8,9 @@ const WorkspaceSchema = new Schema({
         type: String,
         required: true,
     },
+    user: {
+        
+    }
     date: {
         type: Date,
         default: Date.now
