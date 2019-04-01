@@ -1,7 +1,6 @@
 const express = require("express");
 const mongoose = require('mongoose');
 const users = require("./routes/api/users");
-const events = require("./routes/api/events");
 const bodyParser = require('body-parser');
 const passport = require('passport');
 require('./config/passport')(passport);
