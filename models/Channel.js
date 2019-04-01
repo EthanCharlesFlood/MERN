@@ -14,7 +14,6 @@ const ChannelSchema = new Schema({
         type: Boolean,
         required: true
     }
-    users: [User],
     date: {
         type: Date,
         default: Date.now

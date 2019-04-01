@@ -6,6 +6,10 @@ const MessageSchema = new Schema({
         type: Schema.Types.ObjectID,
         ref: 'users'
     },
+    channel: {
+        type: Schema.Types.ObjectID,
+        ref: 'channels'
+    },
     text: {
         type: String,
         required: true

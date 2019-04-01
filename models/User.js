@@ -16,6 +16,14 @@ const UserSchema = new Schema({
         type: String,
         required: true,
     },
+    online: {
+        type: Boolean,
+        default: false
+    },
+    channels: {
+        type: array,
+        ref: "Channel",
+    }
     date: {
         type: Date,
         default: Date.now
